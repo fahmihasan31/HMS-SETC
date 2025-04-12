@@ -10,11 +10,10 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import { ModeToggle } from "@/components/ui/mode-toggle";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-center items-center w-full py-4">
+    <nav className="flex justify-center items-center w-full py-1">
       <div className="border p-2 rounded-2xl">
         <div className="flex items-center justify-between bg- white px-6 py-1 rounded-2xl shadow w-full max-w-4xl gap-8">
           {/* Logo Kiri */}
@@ -76,9 +75,6 @@ const Navbar = () => {
             className="object-contain"
           />
         </div>
-      </div>
-      <div className="absolute right-25">
-        <ModeToggle />
       </div>
     </nav>
   );
