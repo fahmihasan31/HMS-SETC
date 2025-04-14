@@ -10,13 +10,14 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
 
-      <header className="px-4 md:px-12 lg:px-24 lg-py-20 flex items-center justify-center lg:py-20 py-15">
+      {/* Header */}
+      <header className="px-4 md:px-12 lg:px-24 py-5 lg:py-20 flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
-          <div className="md:col-span-6 space-y-6 text-center md:text-left">
+          <div className="md:col-span-6 space-y-6 te  xt-left">
             <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
             </div>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Mulai Langkah Wirausaha Anda <br />
               di <span className="text-primary">SETC</span>
             </h1>
@@ -26,19 +27,20 @@ export default function Home() {
               kewirausahaan terpadu yang terbuka untuk semua.
             </p>
             <Link href="/">
-              <Button className="w-full md:w-auto">Kenali Lebih Lanjut</Button>
+              <Button className="w-full md:w-auto text-sm py-5">
+                Kenali Lebih Lanjut
+              </Button>
             </Link>
           </div>
-
           {/* Ilustrasi */}
           <div className="md:col-span-6 flex justify-center">
-            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-xs sm:max-w-sm md:max-w-md bg-white rounded-3xl shadow-inner border-2 border-gray-200" />
+            <div className="w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] bg-white rounded-3xl shadow-inner border-2 border-gray-200 md:max-w-2xl" />
           </div>
         </div>
       </header>
 
       {/* statistic */}
-      <section className=" py-20 px-4 md:px-12 lg:px-24">
+      <section className="py-20 px-4 md:px-12 lg:px-24">
         <div className="flex justify-center items-center">
           <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
             📊 Data Kami dalam Angka
@@ -69,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* testimoni */}
-      <section className="py-20 px-4 md:px-12 lg:px-24">
+      <section className="min-h-screen py-25 px-4 md:px-12 lg:px-24">
         <div className="flex justify-center items-center">
           <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
             💬 Kata Mereka Tentang SETC
