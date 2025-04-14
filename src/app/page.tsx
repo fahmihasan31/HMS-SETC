@@ -8,19 +8,18 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden bg-gray-50">
       {/* Navbar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-        <Navbar />
-      </div>
+      <Navbar />
 
-      <section className="min-h-screen px-4 md:px-12 lg:px-24 flex flex-col py-12 pt-24">
-        <header className="grid grid-cols-1 md:grid-cols-12 gap-8 flex-1 items-center">
+      <header className="px-4 md:px-12 lg:px-24 lg-py-20 flex items-center justify-center lg:py-20 py-15">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
+          {/* Teks Kiri */}
           <div className="md:col-span-6 space-y-6 text-center md:text-left">
             <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
             </div>
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Mulai Langkah Wirausaha Anda <br /> di{" "}
-              <span className="text-primary">SETC</span>
+              Mulai Langkah Wirausaha Anda <br />
+              di <span className="text-primary">SETC</span>
             </h1>
             <p className="text-gray-700 text-sm sm:text-base md:text-xl">
               Belajar dan bertumbuh bersama SETC. Ikuti pelatihan{" "}
@@ -28,19 +27,21 @@ export default function Home() {
               kewirausahaan terpadu yang terbuka untuk semua.
             </p>
             <Link href="/">
-              <Button>Gabung Sekarang</Button>
+              <Button className="w-full md:w-auto">Kenali Lebih Lanjut</Button>
             </Link>
           </div>
-          <div className="md:col-span-6 flex justify-center mt-10 md:mt-0">
-            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-xs sm:max-w-sm md:max-w-md bg-white rounded-3xl shadow-inner border-2 border-gray-200"></div>
+
+          {/* Gambar / Ilustrasi */}
+          <div className="md:col-span-6 flex justify-center">
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-xs sm:max-w-sm md:max-w-md bg-white rounded-3xl shadow-inner border-2 border-gray-200" />
           </div>
-        </header>
-      </section>
+        </div>
+      </header>
 
       {/* statistic */}
-      <section className=" py-20 px-4 md:px-12 lg:px-24 bg-white">
+      <section className=" py-20 px-4 md:px-12 lg:px-24">
         <div className="flex justify-center items-center">
-          <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold">
+          <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
             📊 Data Kami dalam Angka
           </div>
         </div>
@@ -71,7 +72,7 @@ export default function Home() {
       {/* testimoni */}
       <section className="py-20 px-4 md:px-12 lg:px-24">
         <div className="flex justify-center items-center">
-          <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold">
+          <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
             💬 Kata Mereka Tentang SETC
           </div>
         </div>
