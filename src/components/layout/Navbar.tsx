@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-center items-center w-full py-1">
-      <div className="border p-2 rounded-2xl w-full max-w-2xl">
+      <div className="border p-2 rounded-2xl w-full max-w-4xl">
         {/* === DESKTOP === */}
         <div className="hidden md:flex items-center justify-between bg-white px-6 py-1 rounded-2xl shadow w-full gap-8">
           {/* Logo Kiri */}
@@ -35,14 +35,16 @@ const Navbar = () => {
             <NavigationMenuList className="flex gap-4 text-gray-600 font-medium">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/">Beranda</Link>
+                  <Link href="/">Tentang Kami</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  Jasa yang diBerikan
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="bg-white p-4 rounded-lg shadow-md w-40 space-y-2">
+                  <ul className=" p-2 w-40 space-y-2">
                     <li>
                       <NavigationMenuLink asChild>
                         <Link href="/blog/berita">Berita</Link>
@@ -59,13 +61,13 @@ const Navbar = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/produk">Produk</Link>
+                  <Link href="/produk">Kerja Sama</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/pelatihan">Pelatihan</Link>
+                  <Link href="/pelatihan">Daftar Pelatihan</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -109,23 +111,23 @@ const Navbar = () => {
 
         {/* Mobile NavigationMenu dropdown */}
         {open && (
-          <div className="md:hidden mt-2 bg-white rounded-xl shadow p-4">
+          <div className="md:hidden mt-2 bg-white rounded-xl shadow p-4 flex flex-col items-start text-left">
             <NavigationMenu>
-              <NavigationMenuList className="flex flex-col gap-2 text-gray-700 font-medium">
+              <NavigationMenuList className="w-full flex flex-col gap-2 items-start text-gray-700 font-medium">
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link href="/" onClick={() => setOpen(false)}>
-                      Beranda
+                      Tentang Kami
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="w-full justify-between">
-                    Blog
+                  <NavigationMenuTrigger className="w-full text-left justify-start">
+                    Jasa yang diBerikan
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="bg-white p-4 rounded-lg shadow-md w-full space-y-2">
+                  <NavigationMenuContent className="w-full p-0 text-left">
+                    <ul className="bg-white p-2 rounded-lg shadow-md w-full space-y-2 text-left">
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
@@ -153,7 +155,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link href="/produk" onClick={() => setOpen(false)}>
-                      Produk
+                      Kerja Sama
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -161,7 +163,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link href="/pelatihan" onClick={() => setOpen(false)}>
-                      Pelatihan
+                      Daftar Pelatihan
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
