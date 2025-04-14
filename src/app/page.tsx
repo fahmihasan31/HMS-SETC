@@ -12,7 +12,6 @@ export default function Home() {
 
       <header className="px-4 md:px-12 lg:px-24 lg-py-20 flex items-center justify-center lg:py-20 py-15">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
-          {/* Teks Kiri */}
           <div className="md:col-span-6 space-y-6 text-center md:text-left">
             <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
@@ -31,7 +30,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Gambar / Ilustrasi */}
+          {/* Ilustrasi */}
           <div className="md:col-span-6 flex justify-center">
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-xs sm:max-w-sm md:max-w-md bg-white rounded-3xl shadow-inner border-2 border-gray-200" />
           </div>
