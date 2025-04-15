@@ -15,7 +15,7 @@ export default function Home() {
       <header className="px-4 md:px-12 lg:px-26 py-10 lg:py-24 flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
           <div className="md:col-span-6 space-y-6 text-left">
-            <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
+            <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
@@ -35,13 +35,12 @@ export default function Home() {
           </div>
 
           <div className="md:col-span-6 flex justify-center">
-            <div className="w-full h-[280px] sm:h-[360px] md:h-[460px] lg:h-[520px] bg-white rounded-3xl shadow-inner border-2 border-gray-200 md:max-w-2xl overflow-hidden">
+            <div className="relative w-full h-[280px] sm:h-[360px] md:h-[460px] lg:h-[520px] bg-white rounded-3xl shadow-inner border-2 border-gray-200 md:max-w-2xl overflow-hidden">
               <Image
-                src="/path-to-your-image.jpg"
+                src="/images/"
                 alt="Illustration"
-                layout="fill"
-                objectFit="cover"
-                className="w-full h-full"
+                fill
+                className="object-cover rounded-3xl"
               />
             </div>
           </div>
