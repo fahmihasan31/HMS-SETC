@@ -17,10 +17,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex justify-center items-center w-full py-1">
-      <div className="border p-2 rounded-2xl w-full max-w-2xl">
+    <nav className="flex justify-center items-center w-full py-6">
+      <div className="border p-2 rounded-3xl w-full max-w-2xl">
         {/* === DESKTOP === */}
-        <div className="hidden md:flex items-center justify-between bg-white px-6 py-1 rounded-2xl shadow w-full gap-8">
+        <div className="hidden md:flex items-center justify-between bg-white px-6 py-1 rounded-2xl shadow-lg w-full gap-8">
           {/* Logo Kiri */}
           <Image
             src="/images/setc-logo.png"
@@ -35,14 +35,14 @@ const Navbar = () => {
             <NavigationMenuList className="flex gap-4 text-gray-600 font-medium">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/">Beranda</Link>
+                  <Link href="/">Tentang Kami</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Blog</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Jasa</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="bg-white p-4 rounded-lg shadow-md w-40 space-y-2">
+                  <ul className="bg-white rounded-lg w-40 space-y-1">
                     <li>
                       <NavigationMenuLink asChild>
                         <Link href="/blog/berita">Berita</Link>
@@ -59,13 +59,13 @@ const Navbar = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/produk">Produk</Link>
+                  <Link href="/produk">Kerjasama</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/pelatihan">Pelatihan</Link>
+                  <Link href="/pelatihan"> Pelatihan</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
