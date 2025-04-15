@@ -41,7 +41,7 @@ const Navbar = () => {
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger>
-                  Jasa yang diBerikan
+                  Jasa yang diberikan
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className=" p-2 w-40 space-y-2">
