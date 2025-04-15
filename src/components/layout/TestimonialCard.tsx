@@ -72,9 +72,9 @@ const TestimonialCard = ({
           <Image
             src={image}
             alt={name}
-            width={40}
-            height={40}
-            className="rounded-full border-2 border-white shadow-md object-cover mt-4 sm:mt-0"
+            width={50}
+            height={50}
+            className="rounded-full border-white shadow-md object-cover mt-4 sm:mt-0 aspect-square"
           />
         </div>
       </CardContent>
