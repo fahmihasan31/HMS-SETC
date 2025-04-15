@@ -7,102 +7,132 @@ import EventCard from "@/components/layout/EventCard";
 import RegistrationCard from "@/components/layout/RegistrationCard";
 import MapComponent from "@/components/layout/MapComponent";
 import Footer from "@/components/layout/Footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-gray-50">
       {/* Navbar */}
-      <div className="fixed top-0 left-0 right-0 z-50">
+      <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
       </div>
 
-      <section className="min-h-screen px-4 md:px-12 lg:px-24 flex flex-col py-12 pt-24">
-        <header className="grid grid-cols-1 md:grid-cols-12 gap-8 flex-1 items-center">
-          <div className="md:col-span-6 space-y-6 text-center md:text-left">
-            <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
+      {/* Header */}
+      <header className="px-4 md:px-12 lg:px-24 py-10 lg:py-24 mt-6 flex items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
+          <div className="md:col-span-6 space-y-6 text-left">
+            <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
             </div>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Mulai Langkah Wirausaha Anda <br /> di{" "}
-              <span className="text-primary">SETC</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+              Mulai Langkah Wirausaha Anda <br />
+              di <span className="text-primary">SETC</span>
             </h1>
-            <p className="text-gray-700 text-sm sm:text-base md:text-xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700">
               Belajar dan bertumbuh bersama SETC. Ikuti pelatihan{" "}
               <br className="hidden sm:block" />
               kewirausahaan terpadu yang terbuka untuk semua.
             </p>
             <Link href="/">
-              <Button>Gabung Sekarang</Button>
+              <Button className="w-full md:w-auto text-sm md:text-base py-4 px-6 md:py-5">
+                Kenali Lebih Lanjut
+              </Button>
             </Link>
           </div>
-          <div className="md:col-span-6 flex justify-center mt-10 md:mt-0">
-            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-xs sm:max-w-sm md:max-w-md bg-white rounded-3xl shadow-lg  border-gray-200"></div>
+
+          <div className="md:col-span-6 flex justify-center">
+            <div className="relative w-full h-[280px] sm:h-[360px] md:h-[460px] lg:h-[520px] bg-white rounded-3xl shadow-inner border-2 border-gray-200 md:max-w-2xl overflow-hidden">
+              <Image
+                src="/images/"
+                alt="Illustration"
+                fill
+                className="object-cover rounded-3xl"
+              />
+            </div>
           </div>
-        </header>
-      </section>
+        </div>
+      </header>
 
       {/* statistic */}
-      <section className=" py-20 px-4 md:px-12 lg:px-24 bg-white-50">
-        <div className="flex justify-center items-center">
-          <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
-            📊 Data Kami dalam Angka
+      <main>
+        <section className="py-20 px-4 md:px-12 lg:px-24">
+          <div className="flex justify-center items-center">
+            <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
+              📊 Data Kami dalam Angka
+            </div>
           </div>
-        </div>
-        <h1 className="text-5xl font-bold text-center mt-6 mb-4">
-          Statistik Peserta
-        </h1>
-        <div className="mt-20 flex flex-col md:flex-row justify-center items-center gap-6">
-          <Card className="bg-[#0B0F0F] text-white rounded-[32px] shadow-2xl w-full max-w-md text-center">
-            <CardHeader className="space-y-1">
-              <h2 className="text-4xl md:text-5xl font-bold">200.000+</h2>
-              <p className="text-sm md:text-base">
-                Orang telah mengunjungi SETC
-              </p>
-            </CardHeader>
-            <CardContent />
-          </Card>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mt-6 mb-4">
+            Statistik Training
+          </h1>
+          <div className="mt-12 md:mt-20 flex flex-col md:flex-row justify-center items-center gap-6">
+            <Card className="bg-[#0B0F0F] text-white rounded-[32px] shadow-2xl w-full max-w-[320px] sm:max-w-[380px] md:max-w-md text-center">
+              <CardHeader className="space-y-1">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold">
+                  4
+                </h2>
+                <p className="text-md sm:text-lg md:text-base">
+                  Jumlah Pelatihan Aktif
+                </p>
+              </CardHeader>
+              <CardContent />
+            </Card>
 
-          <Card className="bg-[#0B0F0F] text-white rounded-[32px] shadow-2xl w-full max-w-md text-center">
-            <CardHeader className="space-y-1">
-              <h2 className="text-4xl md:text-5xl font-bold">100.000+</h2>
-              <p className="text-sm md:text-base">Peserta yang Telah Dilatih</p>
-            </CardHeader>
-            <CardContent />
-          </Card>
-        </div>
-      </section>
+            <Card className="bg-[#0B0F0F] text-white rounded-[32px] shadow-2xl w-full max-w-[320px] sm:max-w-[380px] md:max-w-md text-center">
+              <CardHeader className="space-y-1">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold">
+                  28
+                </h2>
+                <p className="text-md sm:text-lg md:text-base">Mitra</p>
+              </CardHeader>
+              <CardContent />
+            </Card>
 
-      {/* testimoni */}
-      <section className="py-20 px-4 md:px-12 lg:px-24">
-        <div className="flex justify-center items-center">
-          <div className="border px-4 py-1 rounded-full inline-block text-xs sm:text-sm md:text-base font-semibold bg-white">
-            💬 Kata Mereka Tentang SETC
+            <Card className="bg-[#0B0F0F] text-white rounded-[32px] shadow-2xl w-full max-w-[320px] sm:max-w-[380px] md:max-w-md text-center">
+              <CardHeader className="space-y-1">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold">
+                  1000
+                </h2>
+                <p className="text-md sm:text-lg md:text-base">
+                  Total Penerima
+                </p>
+              </CardHeader>
+              <CardContent />
+            </Card>
           </div>
-        </div>
-        <h1 className="text-5xl font-bold text-center mt-6 mb-4">
-          Testimoni Peserta
-        </h1>
-        <div className="flex justify-center items-stretch flex-wrap gap-4 mt-20">
-          <TestimonialCard
-            name="Jessica Simpson"
-            image="/images/person.jpeg"
-            rating="★★★★★"
-            testimonial="Berkat SETC,usaha saya berkembang dan produk saya lebih dikenal luas."
-          />
-          <TestimonialCard
-            name="Jessica Simpson"
-            image="/images/person.jpeg"
-            rating="★★★★★"
-            testimonial="Berkat SETC,usaha saya berkembang dan produk saya lebih dikenal luas."
-          />
-          <TestimonialCard
-            name="Jessica Simpson"
-            image="/images/person.jpeg"
-            rating="★★★★★"
-            testimonial="Berkat SETC,usaha saya berkembang dan produk saya lebih dikenal luas."
-          />
-        </div>
-      </section>
+        </section>
+
+        {/* testimoni */}
+        <section className="min-h-screen py-20 px-4 md:px-12 lg:px-24">
+          <div className="flex justify-center items-center">
+            <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
+              💬 Kata Mereka Tentang SETC
+            </div>
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mt-6 mb-4">
+            Testimoni Peserta
+          </h1>
+          <div className="flex justify-center items-stretch flex-wrap gap-6 mt-12 md:mt-20">
+            <TestimonialCard
+              name="Jessica Simpson"
+              image="/images/person.jpeg"
+              rating="★★★★★"
+              testimonial="Berkat SETC, usaha saya <strong>berkembang</strong> dan produk saya <strong>lebih dikenal luas</strong>."
+            />
+            <TestimonialCard
+              name="Jessica Simpson"
+              image="/images/person.jpeg"
+              rating="★★★★★"
+              testimonial="Berkat SETC, usaha saya <strong>berkembang</strong> dan produk saya <strong>lebih dikenal luas</strong>."
+            />
+            <TestimonialCard
+              name="Jessica Simpson"
+              image="/images/person.jpeg"
+              rating="★★★★★"
+              testimonial="Berkat SETC, usaha saya <strong>berkembang</strong> dan produk saya <strong>lebih dikenal luas</strong>."
+            />
+          </div>
+        </section>
+      
 
       {/* Program & Kegiatan Section */}
       <section className="py-20 px-4 md:px-8 lg:px-10 bg-gray-50">
@@ -257,9 +287,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer Section */}
-      <section className="overflow-hidden">
+      <section className="overflow-x-hidden">
       <Footer />
       </section>
     </div>
