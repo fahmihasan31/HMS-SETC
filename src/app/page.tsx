@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import TestimonialCard from "@/components/layout/TestimonialCard";
 import EventCard from "@/components/layout/EventCard";
-import RegistrationCard from "@/components/layout/RegistrationCard";
+// import RegistrationCard from "@/components/layout/RegistrationCard";
 import MapComponent from "@/components/layout/MapComponent";
 import Footer from "@/components/layout/Footer";
 import Image from "next/image";

@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import { BsFillSave2Fill } from "react-icons/bs";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 
 export default function Home() {
   return (
