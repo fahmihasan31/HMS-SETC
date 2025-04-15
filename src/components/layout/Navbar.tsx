@@ -17,10 +17,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex justify-center items-center w-full py-6">
+    <nav className="flex justify-center items-center w-full py-3">
       <div className="border p-1 rounded-2xl w-full max-w-4xl">
         {/* === DESKTOP === */}
-        <div className="hidden md:flex items-center justify-between bg-white px-6 py-1 rounded-2xl shadow w-full gap-8">
+        <div className="hidden md:flex items-center justify-between bg-white px-6 py-1 rounded-2xl shadow-md w-full gap-8">
           {/* Logo Kiri */}
           <Image
             src="/images/setc-logo.png"

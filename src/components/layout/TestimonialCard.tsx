@@ -27,7 +27,7 @@ const TestimonialCard = ({
       : testimonial;
 
   return (
-    <Card className="w-full sm:w-[450px] max-w-full min-h-[300px] flex flex-col justify-between">
+    <Card className="w-full sm:w-[450px] max-w-full min-h-[90px] flex flex-col justify-between rounded-3xl shadow-lg border-none">
       <CardContent className="p-6 flex flex-col justify-between h-full">
         <div>
           <p

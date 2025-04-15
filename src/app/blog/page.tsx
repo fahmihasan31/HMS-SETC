@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-gray-50">
       {/* Navbar */}
-      <Navbar />
+      <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/60 shadow-md">
+        <Navbar />
+      </div>
 
       {/* Header */}
-      <header className="px-4 md:px-12 lg:px-24 py-10 lg:py-20 text-center">
+      <header className="px-4 md:px-12 lg:px-24 py-10 lg:py-20 mt-18 text-center">
         {/* Blog Posts Badge */}
         <div className="flex justify-center mb-4">
           <div className="border px-4 py-1 rounded-full inline-flex items-center gap-2 bg-white text-sm md:text-base font-semibold shadow-sm">
