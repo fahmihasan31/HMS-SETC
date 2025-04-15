@@ -7,15 +7,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden bg-gray-50">
+    <div className="min-h-screen overflow-x-hidden bg-gray-50">
       {/* Navbar */}
       <Navbar />
 
       {/* Header */}
-      <header className="px-4 md:px-12 lg:px-24 py-10 lg:py-24 flex items-center justify-center">
+      <header className="px-4 md:px-12 lg:px-24 py-10 lg:py-20 flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full items-center">
           <div className="md:col-span-6 space-y-6 text-left">
-            <div className="border px-4 py-1 rounded-full inline-block text-sm md:text-base font-semibold bg-white">
+            <div className="border px-4 py-1 rounded-full inline-flex text-sm md:text-base font-semibold bg-white">
               🔥 Dipercaya Ribuan Wirausaha
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
