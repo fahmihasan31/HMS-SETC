@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 interface TestimonialCardProps {
   name: string;
   image: string;
   rating: string;
-  testimonial: string; // Menggunakan string untuk testimonial langsung
+  testimonial: string;
 }
 
 const TestimonialCard = ({
@@ -68,10 +69,12 @@ const TestimonialCard = ({
             <h3 className="font-semibold text-lg">{name}</h3>
             <div className="text-black text-xl mt-1">{rating}</div>
           </div>
-          <img
+          <Image
             src={image}
             alt={name}
-            className="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover mt-4 sm:mt-0"
+            width={40}
+            height={40}
+            className="rounded-full border-2 border-white shadow-md object-cover mt-4 sm:mt-0"
           />
         </div>
       </CardContent>

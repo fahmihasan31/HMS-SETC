@@ -1,8 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import TestimonialCard from "@/components/layout/TestimonialCard";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,10 +36,12 @@ export default function Home() {
 
           <div className="md:col-span-6 flex justify-center">
             <div className="w-full h-[280px] sm:h-[360px] md:h-[460px] lg:h-[520px] bg-white rounded-3xl shadow-inner border-2 border-gray-200 md:max-w-2xl overflow-hidden">
-              <img
+              <Image
                 src="/path-to-your-image.jpg"
                 alt="Illustration"
-                className="w-full h-full object-cover"
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
               />
             </div>
           </div>
