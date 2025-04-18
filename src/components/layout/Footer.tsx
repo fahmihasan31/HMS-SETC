@@ -15,14 +15,13 @@ const Footer = () => {
       <div className="px-4 md:px-12 lg:px-24 relative z-10">
         <div className="max-w-7xl mx-auto bg-[#0B0F0F] text-white rounded-3xl shadow-xl px-6 sm:px-8 md:px-10 py-10 md:py-12">
           <div className="flex flex-col md:flex-row md:justify-between gap-8">
-            {/* Kolom kiri */}
             <div className="md:w-1/2 space-y-3">
               <h2 className="text-xl md:text-2xl font-bold">
                 Ingin tahu level usaha Anda sekarang?
               </h2>
               <p className="text-sm text-gray-300">
-                Jawab beberapa pertanyaan singkat untuk mengetahui posisi
-                usaha Anda dan rekomendasi program SETC yang sesuai.
+                Jawab beberapa pertanyaan singkat untuk mengetahui posisi usaha
+                Anda dan rekomendasi program SETC yang sesuai.
               </p>
               <div className="pt-4">
                 <Button
@@ -34,7 +33,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Kolom kanan */}
             <div className="md:w-1/2 flex items-center justify-end mt-6 md:mt-24">
               <div className="w-full md:w-4/5 lg:w-3/4 bg-gray-900 rounded-2xl flex items-center overflow-hidden px-2 py-2 gap-2">
                 <input
