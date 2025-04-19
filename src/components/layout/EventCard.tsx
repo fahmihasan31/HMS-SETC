@@ -41,7 +41,7 @@ const EventCard = ({
           {date} | {time} | {location}
         </p>
         <div className="mt-auto">
-          <Button className="rounded-lg bg-gray-950 text-white hover:bg-gray-800">
+          <Button className="rounded-lg sm:w-auto text-sm py-4 px-4 md:py-5 h-10 w-full">
             Daftar Sekarang
           </Button>
         </div>
