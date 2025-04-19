@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-gray-50">
       {/* Navbar */}
-      <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/60 shadow-md">
+      <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
       </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
               kewirausahaan terpadu yang terbuka untuk semua.
             </p>
             <Link href="/">
-              <Button className="w-full md:w-auto text-sm md:text-base py-4 px-6 md:py-5">
+              <Button className=" rounded-xl sm:w-auto text-sm py-4 px-4 md:py-5 h-10  w-full">
                 Kenali Lebih Lanjut
               </Button>
             </Link>
